@@ -5,18 +5,18 @@
 
 **AIReview** is an intelligent Python code analysis tool that acts as your personal code reviewer. It performs comprehensive static analysis to identify **security vulnerabilities**, **performance bottlenecks**, **style violations**, and **potential bugs** in your Python projects.
 
-> 🎯 **Perfect for**: Code reviews, CI/CD pipelines, learning best practices, and maintaining high-quality codebases.
+ **Perfect for**: Code reviews, CI/CD pipelines, learning best practices, and maintaining high-quality codebases.
 
-## ✨ Features
+## Features
 
 | Category | What It Catches | Impact |
 
-| 🔒 **Security** | `eval()` usage, hardcoded secrets, shell injection risks | **Critical** - Prevents security breaches |
-| ⚡ **Performance** | Nested loops, inefficient patterns, comprehensions | **High** - Improves application speed |
-| 🎨 **Style** | Naming conventions, missing docstrings, analysis complexity | **Medium** - Enhances code maintainability |
-| 🐛 **Bug Detection** | typos, incorrect comparisons, logic errors | **High** - Prevents runtime failures |
+| **Security** | `eval()` usage, hardcoded secrets, shell injection risks | **Critical** - Prevents security breaches |
+| **Performance** | Nested loops, inefficient patterns, comprehensions | **High** - Improves application speed |
+| **Style** | Naming conventions, missing docstrings, analysis complexity | **Medium** - Enhances code maintainability |
+| **Bug Detection** | typos, incorrect comparisons, logic errors | **High** - Prevents runtime failures |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+ installed
@@ -51,7 +51,7 @@ python Review.py --directory . --severity high
 python Review.py --directory . --output report.json
 ```
 
-## 📊 Output Formats
+## Output Formats
 
 ### Table Format (Default)
 ```bash
@@ -71,7 +71,7 @@ python Review.py --directory . --format json
 ```
 Ideal for automation and integration with other tools.
 
-## 🎯 Advanced Usage
+## Advanced Usage
 
 ### Filter by Issue Type
 ```bash
@@ -103,7 +103,7 @@ python Review.py --directory . --format json --output ci_report.json --severity 
 python Review.py --directory . --format summary | grep "Quality Score"
 ```
 
-## 📈 Example Output
+## Example Output
 
 ```yaml
 🔍 Code Analysis Summary
@@ -123,8 +123,7 @@ Issues by Category:
   ⚡ Performance: 5
   🎨 Style: 12
   🐛 Bug: 4
-
-📋 Detailed Issues
+ Detailed Issues
 ================================================================================
 
 📄 src/main.py
@@ -138,31 +137,31 @@ Issues by Category:
     💡 Consider refactoring to reduce complexity
 ```
 
-## 🛠️ What AIReview Detects
+## What AIReview Detects
 
 ### Security Vulnerabilities
-- ✅ Dangerous function calls (`eval`, `exec`, `compile`)
-- ✅ Hardcoded passwords and API keys
-- ✅ Shell injection risks in subprocess calls
-- ✅ Unsafe dynamic imports
+- Dangerous function calls (`eval`, `exec`, `compile`)
+- Hardcoded passwords and API keys
+- Shell injection risks in subprocess calls
+- Unsafe dynamic imports
 
 ### Performance Issues
-- ✅ Nested loop complexity (O(n³) and higher)
-- ✅ Inefficient list operations in loops
-- ✅ Complex list comprehensions
-- ✅ Algorithmic bottlenecks
+- Nested loop complexity (O(n³) and higher)
+- Inefficient list operations in loops
+- Complex list comprehensions
+- Algorithmic bottlenecks
 
 ### Code Style & Quality
-- ✅ Function naming conventions (snake_case)
-- ✅ Missing docstrings
-- ✅ Cyclomatic complexity analysis
-- ✅ Code organization best practices
+- Function naming conventions (snake_case)
+- Missing docstrings
+- Cyclomatic complexity analysis
+- Code organization best practices
 
 ### Bug Prevention
-- ✅ Common typos in built-in functions
-- ✅ Incorrect comparison operators (`is` vs `==`)
-- ✅ Logic errors and anti-patterns
-- ✅ Undefined variable usage
+- Common typos in built-in functions
+- Incorrect comparison operators (`is` vs `==`)
+- Logic errors and anti-patterns
+- Undefined variable usage
 
 
 ### Development Setup
