@@ -1,4 +1,4 @@
-# AIReview 🔍
+# AIReview
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -106,7 +106,7 @@ python Review.py --directory . --format summary | grep "Quality Score"
 ## Example Output
 
 ```yaml
-🔍 Code Analysis Summary
+Code Analysis Summary
 ==================================================
 Files analyzed: 12
 Total issues: 23
@@ -126,7 +126,7 @@ Issues by Category:
  Detailed Issues
 ================================================================================
 
-📄 src/main.py
+src/main.py
 --------------
 🚨 Line 45:8 🔒 [CRITICAL] Using eval() can execute arbitrary code - security risk
     Code: result = eval(user_input)
@@ -184,5 +184,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made for the Python community**
-
-*Happy coding and secure reviewing!* 
