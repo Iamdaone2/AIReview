@@ -3,9 +3,8 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-**AIReview** is an intelligent Python code analysis tool that acts as your personal code reviewer. It performs comprehensive static analysis to identify **security vulnerabilities**, **performance bottlenecks**, **style violations**, and **potential bugs** in your Python projects.
 
- **Perfect for**: Code reviews, CI/CD pipelines, learning best practices, and maintaining high-quality codebases.
+Code reviews, CI/CD pipelines, learning best practices, and maintaining high-quality codebases.
 
 ## Features
 
@@ -18,7 +17,6 @@
 
 ## Quick Start
 
-### Prerequisites
 - Python 3.8+ installed
 
 ### Installation
@@ -103,83 +101,10 @@ python Review.py --directory . --format json --output ci_report.json --severity 
 python Review.py --directory . --format summary | grep "Quality Score"
 ```
 
-## Example Output
-
-```yaml
-Code Analysis Summary
-==================================================
-Files analyzed: 12
-Total issues: 23
-Quality Score: 87/100
-
-Issues by Severity:
-  🚨 Critical: 1
-  ⚠️ High: 3
-  🟠 Medium: 8
-  💡 Low: 11
-
-Issues by Category:
-  🔒 Security: 2
-  ⚡ Performance: 5
-  🎨 Style: 12
-  🐛 Bug: 4
- Detailed Issues
-================================================================================
-
-src/main.py
---------------
-🚨 Line 45:8 🔒 [CRITICAL] Using eval() can execute arbitrary code - security risk
-    Code: result = eval(user_input)
-    💡 Consider safer alternatives to eval()
-
-⚠️ Line 67:12 ⚡ [HIGH] Deeply nested loop (depth: 3)
-    Code: for item in nested_list:
-    💡 Consider refactoring to reduce complexity
-```
-
-## What AIReview Detects
-
-### Security Vulnerabilities
-- Dangerous function calls (`eval`, `exec`, `compile`)
-- Hardcoded passwords and API keys
-- Shell injection risks in subprocess calls
-- Unsafe dynamic imports
-
-### Performance Issues
-- Nested loop complexity (O(n³) and higher)
-- Inefficient list operations in loops
-- Complex list comprehensions
-- Algorithmic bottlenecks
-
-### Code Style & Quality
-- Function naming conventions (snake_case)
-- Missing docstrings
-- Cyclomatic complexity analysis
-- Code organization best practices
-
-### Bug Prevention
-- Common typos in built-in functions
-- Incorrect comparison operators (`is` vs `==`)
-- Logic errors and anti-patterns
-- Undefined variable usage
-
-
-### Development Setup
-```bash
-git clone https://github.com/Iamdaone2/AIReview.git
-cd AIReview
-# Create your feature branch
-git checkout -b feature/amazing-feature
-# Make your changes and test
-python Review.py --directory . --format summary
-# Commit and push
-git commit -m "Add amazing feature"
-git push origin feature/amazing-feature
-```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - [LICENSE](LICENSE) file for details.
 
 ---
 
