@@ -11,8 +11,8 @@ Code reviews, CI/CD pipelines, learning best practices, and maintaining high-qua
 | Category | What It Catches | Impact |
 
 | **Security** | `eval()` usage, hardcoded secrets, shell injection risks | **Critical** - Prevents security breaches |
-| **Performance** | Nested loops, inefficient patterns, comprehensions | **High** - Improves application speed |
-| **Style** | Naming conventions, missing docstrings, analysis complexity | **Medium** - Enhances code maintainability |
+| **Performance** | Nested loops| **High** - Improves application speed |
+| **Style** | **Medium** - Enhances code maintainability |
 | **Bug Detection** | typos, incorrect comparisons, logic errors | **High** - Prevents runtime failures |
 
 ## Quick Start
@@ -22,14 +22,12 @@ Code reviews, CI/CD pipelines, learning best practices, and maintaining high-qua
 ### Installation
 
 ```bash
-# Clone the repository
+
 git clone https://github.com/Iamdaone2/AIReview.git
 cd AIReview
 
-# Verify Python version
 python --version
 
-# Test the installation
 python Review.py --help
 ```
 
@@ -42,10 +40,10 @@ python Review.py --file script.py
 # Analyze entire project or folder
 python Review.py --directory .
 
-# Focus on critical issues only
+
 python Review.py --directory . --severity high
 
-# Save detailed report
+
 python Review.py --directory . --output report.json
 ```
 
@@ -68,8 +66,6 @@ Great for quick overviews and CI/CD status checks.
 python Review.py --directory . --format json
 ```
 Ideal for automation and integration with other tools.
-
-## Advanced Usage
 
 ### Filter by Issue Type
 ```bash
@@ -104,7 +100,7 @@ python Review.py --directory . --format summary | grep "Quality Score"
 
 ## License
 
-This project is licensed under the MIT License - [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - [LICENSE](LICENSE)
 
 ---
 
